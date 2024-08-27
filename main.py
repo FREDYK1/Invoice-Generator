@@ -27,7 +27,6 @@ for filepath in filepaths:
     column_names = [name.replace("_", " ").title() for name in raw_column_names]
 
     pdf.set_font(family="Times", size=12, style="B")
-    pdf.set_text_color(80, 80, 80)
     pdf.cell(w=30, h=10, txt=column_names[0], border=1)
     pdf.cell(w=60, h=10, txt=column_names[1], border=1)
     pdf.cell(w=40, h=10, txt=column_names[2], border=1)
